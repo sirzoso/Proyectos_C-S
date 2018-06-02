@@ -1,0 +1,153 @@
+<% include header %>
+<html>
+<head>
+    <title>Zombies</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <style type="text/css">
+        body{
+            width: 100%;
+            background-image: url("../recursos/img/zombies.jpg")
+        }
+        .navbar{
+            background: black;
+            top: 0;
+            right: 0;
+            left: 0;
+        }
+        .navbar-brand>img{
+            display: block;
+            height: 100%;
+            margin-right: 5px;
+        }
+        h3{
+            text-align: center;
+            color: white;
+        }
+        p{
+            padding-top: 10px;
+            color: white;
+        }
+        .row{
+            background: black;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-style: ridge;
+            border-radius: 10px;
+        }
+        footer{
+            width: 100%;
+            height: 90px;
+            left: 0;
+            margin-top: 20px;
+            bottom: 0;
+            color: white;
+            text-align: center;
+            background: black
+        }
+        </style>
+</head>
+<body>
+    <div class="album py-5 bg-light">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="../recursos/img/zom1.jpg" data-holder-rendered="true">
+                <div class="card-body">
+                  <p class="card-text"><h3>Arpia</h3><br>Cuando menos te percates de algo, más cerca la tendras encima de ti</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Debilidades</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Conoce más</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="../recursos/img/zom2.jpg" data-holder-rendered="true">
+                <div class="card-body">
+                  <p class="card-text"><h3>Sanguinario</h3><br>Suelen ir en grandes grupos y no dejaran de perseguirte hasta lograr acabarte</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Debilidades</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Conoce más</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="../recursos/img/zom3.jpg" data-holder-rendered="true">
+                <div class="card-body">
+                  <p class="card-text"><h3>Catalizador</h3><br>Listo para atacar en el momento que menos esperes, suele parecer estar muertos pero todo lo contrario</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Debilidades</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Conoce más</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="container">
+    <h3>¡Preparate!</h3>
+        <div class="row">
+            <div class="col-xs-12">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+                        <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item banner-altura-400 active">
+                            <img class="img-responsive" src="../recursos/img/zombies1.jpg" alt="Primer">
+                            <div class="carousel-caption hidden-xs hidden-sm">
+                                <h3>¡ZOMBIEEEES!</h3>
+                                <p>Conoce a cada clase de zombi por la cual debes sobrevivir</p>
+                            </div>
+                        </div>
+                        <div class="item banner-altura-400">
+                            <img class="img-responsive" src="../recursos/img/weapon1.jpg" alt="Segundo">
+                            <div class="carousel-caption hidden-xs hidden-sm">
+                                <h3>Armas</h3>
+                                <p>Conoce tú arsenal, no debes de andar por ahí tú solo sin una de estás</p>
+                            </div>
+                        </div>
+                        <div class="item banner-altura-400">
+                            <img class="img-responsive" src="../recursos/img/survivor.jpg" alt="Tercero">
+                            <div class="carousel-caption hidden-xs hidden-sm">
+                                <h3>Sobrevivientes</h3>
+                                <p>Ponte al tanto de tú gente, te van a necesitar</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                   </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="recursos/js/jquery.js"></script>
+    <script src="recursos/js/bootstrap.min.js"></script>
+</body>
+</html>
+<% include footer %>
